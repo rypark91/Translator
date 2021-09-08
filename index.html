@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav>
+        <div class="toggleBox">
+            <label><i class="fas fa-sun"></i></label>
+            <label class="toggle">
+                <input type="checkbox" id="toggler">
+                <span class="slider round"></span>
+            </label>
+            <label><i class="fas fa-moon"></i></label><br>
+        </div>
+    </nav>
+    <h1>Language Translator and Detector</h1>
+    
+    
+    <div class="items">
+        
+        <div id="detectArea">
+            <button id="detectB">Detect</button>
+            <p id="detectedLanguage"></p>
+            <textarea name="detect" id="detect"></textarea>
+        </div>
+        <div id="translateArea">
+            <button id="translateB">Translate</button>
+            <select name="languageList" id="languageList"></select><br>
+            <textarea name="translated" id="translated" readonly></textarea>
+        </div>
+        
+        
+    </div>
+    <div class="footer">
+        <p>Site created by Ryan Park &copy; 2021 Translation provided by Google API</p>
+    </div>
+    
+    
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
